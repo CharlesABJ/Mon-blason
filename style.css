@@ -7,9 +7,11 @@
     font-family: Montserrat, Arial, sans-serif;
 }
 
-#blason {
+body {
     background: #CF6839;
 }
+
+#blason {}
 
 #blason .devise {
     padding-top: 50px;
@@ -28,12 +30,32 @@
     color: #fcfc6b;
 }
 
+#blason .valeurs h2 {
+    font-size: 30px;
+    color: #DFDEE1;
+    text-align: center;
+}
+
 #blason .split {
     display: flex;
 }
 
-#blason .split div {
-    width: calc(100%/3);
+
+
+#blason .split.ressource-obstacle .ressource {
+    padding: 10px;
+    width: 50%;
+}
+
+#blason .split.ressource-obstacle .ressource img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#blason .split.ressource-obstacle .obstacle {
+    padding: 10px;
+    width: 50%;
 }
 
 
@@ -42,11 +64,14 @@
     width: 100%;
 }
 
-
-
-div:not(.trigger) {
-    width: 100vw;
+#blason .split .ressource {
+    width: 50%;
 }
+
+#blason .split .ressource img {}
+
+
+
 
 img {
     width: 100%;
@@ -54,4 +79,17 @@ img {
 
 .trigger {
     cursor: pointer;
+}
+
+
+footer {
+    text-align: center;
+    padding: 50px 0 5px;
+}
+
+@media screen and (max-width:830px) {
+    #blason .devise h1 {
+        font-size: 24px;
+    }
+
 }
