@@ -11,8 +11,6 @@ body {
     background: #CF6839;
 }
 
-#blason {}
-
 #blason .devise {
     padding-top: 50px;
     display: flex;
@@ -24,23 +22,57 @@ body {
     color: #FFFF99;
     width: 70%;
     text-align: center;
+    transition: 0.3s all;
 }
 
 #blason .devise h1:hover {
+    transition: 0.3s all;
     color: #fcfc6b;
 }
 
 #blason .valeurs h2 {
     font-size: 30px;
     color: #DFDEE1;
-    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+    transition: 0.3s all;
+}
+
+#blason .valeurs h2:hover {
+    color: #ebebeb;
+    transition: 0.3s all;
+}
+
+#blason .valeurs .grid {
+    margin: 50px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#blason .valeurs .grid {
+    display: flex;
+}
+
+#blason .valeurs .grid div {
+    width: 25%;
+}
+
+#blason .valeurs .grid div img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    transition: 0.3s all;
+}
+
+#blason .valeurs .grid div img:hover {
+    width: 62%;
+    height: 62%;
+    transition: 0.3s all;
 }
 
 #blason .split {
     display: flex;
 }
-
-
 
 #blason .split.ressource-obstacle .ressource {
     padding: 10px;
@@ -58,8 +90,6 @@ body {
     width: 50%;
 }
 
-
-
 #blason .split .valeurs div {
     width: 100%;
 }
@@ -67,11 +97,6 @@ body {
 #blason .split .ressource {
     width: 50%;
 }
-
-#blason .split .ressource img {}
-
-
-
 
 img {
     width: 100%;
@@ -81,15 +106,26 @@ img {
     cursor: pointer;
 }
 
-
 footer {
     text-align: center;
     padding: 50px 0 5px;
 }
 
-@media screen and (max-width:830px) {
+@media screen and (max-width: 830px) {
     #blason .devise h1 {
         font-size: 24px;
     }
 
+    #blason .split {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #blason .split.ressource-obstacle .ressource {
+        width: 90%;
+    }
+
+    #blason .split.ressource-obstacle .obstacle {
+        width: 90%;
+    }
 }
